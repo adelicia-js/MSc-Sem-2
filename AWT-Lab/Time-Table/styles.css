@@ -1,0 +1,36 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: auto;
+}
+
+header {
+    padding: 5px;
+    text-align: center;
+    box-shadow: 10px 10px 8px #83dada;  
+}
+
+table {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    box-shadow: 10px 10px 8px #5ca299;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px 3px;
+    text-align: center;
+}
+
+a:default {
+    color:rgb(14, 14, 85);
+}
+
+a:visited {
+    color: #5ca299;
+}
+
+a:hover {
+    color:rgb(189, 125, 169);
+}

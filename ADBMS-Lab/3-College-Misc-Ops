@@ -1,0 +1,31 @@
+alter table students
+add Gender varchar(2);
+
+select sum(test_1+test_2) from internals where registration_number='CSC01';
+select avg(test_1+test_2) from internals where gender='F';
+select student_name from students where gender = 'F';
+select registration_number from internals where test_1 >= 20;
+
+select * from internals;
+alter table internals
+add Internals_Grade varchar(1);
+
+update internals
+set Internals_Grade = 'A'
+where test_1 + test_2 >=40 and (test_1+test_2+activity) > 60 and (test_1+test_2+activity) <= 75;
+
+update internals
+set Internals_Grade = 'C'
+where test_1 + test_2 >=20 and (test_1+test_2+activity) <= 40;
+
+update internals
+set Internals_Grade = 'F'
+where test_1 + test_2 >=0;
+
+-- inserted some values into staff
+
+select * from staff;
+
+select count(staff_name), department_id
+from staff
+group by department_id;

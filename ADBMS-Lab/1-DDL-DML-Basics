@@ -1,0 +1,57 @@
+-- creating a table
+CREATE TABLE Students (
+    id INTEGER PRIMARY KEY,
+    name TEXT NOT NULL,
+    age INTEGER NOT NULL
+);
+
+-- inserting records
+INSERT INTO Students VALUES(9381,'Adelicia',21);
+INSERT INTO Students VALUES(9382,'Celesta',21);
+
+-- obtaining records
+SELECT * FROM Students WHERE age = 21;
+
+-- deleting records
+DELETE FROM Students WHERE id = 9383;
+
+-- adding a new column using 'ALTER'
+ALTER TABLE Students
+ADD gender TEXT 
+
+-- updating the table
+UPDATE Students
+SET gender = 'F'
+WHERE id = 9381 OR 9382
+
+INSERT INTO Students VALUES(9383,'Nick',22);
+INSERT INTO Students VALUES(9384,'Jonathan',18);
+
+ALTER TABLE Students
+ADD voter TEXT
+
+UPDATE Students
+SET voter = 'Y'
+WHERE age > 18
+
+UPDATE Students
+SET voter = 'N'
+WHERE age <= 18
+
+-- displays non-voter records
+SELECT name FROM Students WHERE voter = 'N'
+
+-- displays first two records
+SELECT * FROM Students
+LIMIT 2;
+
+-- displays last two records
+SELECT * FROM Students
+ORDER BY id DESC
+LIMIT 2;
+
+SELECT * FROM Students 
+WHERE NOT age <= 18 AND NOT gender = 'M' AND voter = 'Y' OR voter = 'N';
+
+-- deleting the table
+DROP TABLE Students;

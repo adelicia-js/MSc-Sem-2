@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>Bookworm</title>
+  </head>
+  <body>
+    <header>
+      <div id="navbar">
+        <h1 id="nav-logo">Bookworm</h1>
+        <ul id="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#books">Books</a></li>
+          <li><a href="#register">Register</a></li>
+          <li><a href="#contact-us">Contact Us</a></li>
+          <li><a href="login.html" target="_blank">Login</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section id="home">
+        <div id="home-header">
+          <figure>
+            <img src="bookstore.jpg" alt="Book Store" />
+            <figcaption>
+              Photo by
+              <a
+                href="https://unsplash.com/@ninjason?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                >Jason Leung</a
+              >
+              on
+              <a
+                href="https://unsplash.com/photos/gWZzETD0Ad4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                >Unsplash</a
+              >
+            </figcaption>
+          </figure>
+          <h2>Enter a world, of your choice...</h2>
+        </div>
+      </section>
+      <section id="about-us"></section>
+      <section id="books">
+        <div>
+          <ul>
+            <li>
+              <figure>
+                <img
+                  src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1542542538i/42857229.jpg"
+                  alt=""
+                />
+                <figcaption>The Year of the Ladybird, Graham Joyce</figcaption>
+              </figure>
+            </li>
+            <li>
+                <figure>
+                    <img
+                      src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51I9fQLhnpL.jpg"
+                      alt=""
+                    />
+                    <figcaption>Inception (The Marked Saga Book 1), Bianca Scardoni</figcaption>
+                  </figure>
+            </li>
+            <li><figure>
+                <img
+                  src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81tNBrrGSJL.jpg"
+                  alt=""
+                />
+                <figcaption>The Loser, Thomas Bernhard</figcaption>
+              </figure></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><figure>
+                <img
+                  src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71SCqfZfHEL.jpg"
+                  alt=""
+                />
+                <figcaption>Atonement, Ian McEwan</figcaption>
+              </figure></li>
+            <li><figure>
+                <img
+                  src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71kW3I8WH5L.jpg"
+                  alt=""
+                />
+                <figcaption>Gilead, Marilynne Robinson</figcaption>
+              </figure></li>
+            <li><figure>
+                <img
+                  src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51GTpkH-JJL._SX343_BO1,204,203,200_.jpg"
+                  alt=""
+                />
+                <figcaption>The Fire Eternal, Chris d'Lacey</figcaption>
+              </figure></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><figure>
+                <img
+                  src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/91ZaXXD8K8L.jpg"
+                  alt=""
+                />
+                <figcaption>Ringworld, Larry Niven</figcaption>
+              </figure></li>
+            <li><figure>
+                <img
+                  src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71mWiiUV9ZL.jpg"
+                  alt=""
+                />
+                <figcaption>History Is All You Left Me, Adam Silvera</figcaption>
+              </figure></li>
+            <li><figure>
+                <img
+                  src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71XtGTK8OpL.jpg"
+                  alt=""
+                />
+                <figcaption>Trainspotting, Irvine Welsh</figcaption>
+              </figure></li>
+          </ul>
+        </div>
+      </section>
+      <section id="register">
+        <div>
+          <h3>Register now!</h3>
+          <form action="submitted.html" method="post" onsubmit="validate()">
+            <section id="personal-details">
+              <label for="name"
+                >Enter your name:
+                <br />
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Enter your name..."
+                  required
+                />
+              </label>
+              <label for="email"
+                >Enter your email:
+                <br />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email..."
+                  required
+                />
+              </label>
+              <label for="dob"
+                >Enter your date of birth:
+                <br />
+                <input type="date" name="dob" id="dob" required />
+              </label>
+            </section>
+
+            <section id="gender-details">
+              <label for="gender-choices">Select your gender:</label>
+              <ul>
+                <li>
+                  <input type="radio" name="gender" id="gender-f" value="f" />F
+                </li>
+                <li>
+                  <input type="radio" name="gender" id="gender-m" value="m" />M
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    name="gender"
+                    id="gender-o"
+                    value="other"
+                  />Other
+                </li>
+              </ul>
+            </section>
+
+            <section id="source-section">
+              <label for="sources">Where did you hear about us?</label>
+              <br />
+              <select name="" id="">
+                <option value="">(select one)</option>
+                <option value="instagram">Instagram</option>
+                <option value="twitter">Twitter</option>
+                <option value="facebook">Facebook</option>
+                <option value="website">Our Official Website</option>
+              </select>
+            </section>
+
+            <section id="comment-box">
+              <label for="comments">Any suggestions/comments for us?</label>
+              <br />
+              <textarea
+                name="comments-area"
+                id="comments"
+                cols="30"
+                rows="5"
+                placeholder="Enter your comments here..."
+              ></textarea>
+            </section>
+
+            <section>
+              <label for="password-box">Enter your password</label>
+              <br />
+              <input
+                type="password"
+                id="password-box"
+                name="password-box"
+                placeholder="Enter your password..."
+                required
+              />
+            </section>
+            <br />
+
+            <section>
+              <label for="confirm-pwd">Re-enter your password</label>
+              <br />
+              <input
+                type="password"
+                id="confirm-pwd"
+                name="confirm-pwd"
+                placeholder="Enter your password..."
+              />
+            </section>
+            <br />
+
+            <section id="submit-section">
+              <input type="submit" name="" id="submit-btn" value="Submit" />
+            </section>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section id="contact-us"></section>
+    </footer>
+  </body>
+</html>

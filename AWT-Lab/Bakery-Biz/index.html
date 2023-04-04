@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+    <title>Wholesome Bakes</title>
+  </head>
+  <body>
+    <header>
+      <div id="navbar">
+        <h1 id="nav-logo">Wholesome Bakes</h1>
+        <ul id="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#register">Register</a></li>
+          <li><a href="#contact-us">Contact Us</a></li>
+          <li><a href="login.html" target="_blank">Login</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section id="home">
+        <div id="home-header">
+            <h2>Fresh, Delicious, Homely.</h2>
+            <h3>We are committed to quality services, everywhere, all the time.</h3>
+            <figure>
+                <img src="bakery.jpg" alt="Bakery Shop">
+                <figcaption>Photo by <a href="https://unsplash.com/fr/@blsnki?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Yeh Xintong</a> on <a href="https://unsplash.com/photos/go3DT3PpIw4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                </figcaption>
+            </figure>
+        </div>
+      </section>
+      <section id="about-us">
+       
+      </section>
+      <section id="products">
+
+      </section>
+      <section id="register">
+        <div>
+            <h3>Register now!</h3>
+            <form action="submitted.html" method="post" onsubmit="validate()">
+                <section id="personal-details">
+                  <label for="name"
+                    >Enter your name:
+                    <br />
+                    <input type="text" name="name" id="name" placeholder="Enter your name..." required />
+                  </label>
+                  <label for="email"
+                    >Enter your email:
+                    <br />
+                    <input type="email" name="email" id="email" placeholder="Enter your email..."required />
+                  </label>
+                  <label for="dob"
+                    >Enter your date of birth:
+                    <br />
+                    <input type="date" name="dob" id="dob" required />
+                  </label>
+                </section>
+      
+                <section id="gender-details">
+                  <label for="gender-choices">Select your gender:</label>
+                  <ul>
+                    <li>
+                      <input type="radio" name="gender" id="gender-f" value="f" />F
+                    </li>
+                    <li>
+                      <input type="radio" name="gender" id="gender-m" value="m" />M
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        name="gender"
+                        id="gender-o"
+                        value="other"
+                      />Other
+                    </li>
+                  </ul>
+                </section>
+      
+                <section id="source-section">
+                  <label for="sources">Where did you hear about us?</label>
+                  <br />
+                  <select name="" id="">
+                    <option value="">(select one)</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="twitter">Twitter</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="website">Our Official Website</option>
+                  </select>
+                </section>
+      
+                <section id="comment-box">
+                  <label for="comments">Any suggestions/comments for us?</label>
+                  <br />
+                  <textarea
+                    name="comments-area"
+                    id="comments"
+                    cols="30"
+                    rows="5"
+                    placeholder="Enter your comments here..."
+                  ></textarea>
+                </section>
+      
+                <section>
+                  <label for="password-box">Enter your password</label>
+                  <br />
+                  <input
+                    type="password"
+                    id="password-box"
+                    name="password-box"
+                    placeholder="Enter your password..."
+                    required
+                  />
+                </section>
+                <br />
+      
+                <section>
+                  <label for="confirm-pwd">Re-enter your password</label>
+                  <br />
+                  <input type="password" id="confirm-pwd" name="confirm-pwd" placeholder="Enter your password..."/>
+                </section>
+                <br />
+      
+                <section id="submit-section">
+                  <input type="submit" name="" id="submit-btn" value="Submit" />
+                </section>
+              </form>
+        </div>
+       
+    </section>
+    </main>
+    <footer>
+      <section id="contact-us">
+
+      </section>
+    </footer>
+  </body>
+</html>

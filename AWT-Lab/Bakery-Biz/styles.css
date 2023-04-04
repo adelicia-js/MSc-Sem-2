@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Philosopher", sans-serif;
+  background-color: #3a071b;
+}
+
+#navbar {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  background-color: #3a071b;
+  background-size: cover;
+  position: fixed;
+  height: 12vh;
+  width: 100vw;
+  max-width: 100%;
+}
+
+#navbar #nav-logo {
+  padding: 0 0.5rem 0 0.5rem;
+  text-transform: uppercase;
+  color: #ecd4f1;
+  font-size: clamp(0.5rem, 10rem, 2rem);
+}
+
+#navbar #nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#nav-list li {
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: clamp(0.2rem, 5rem, 1.1rem);
+  font-weight: bold;
+}
+
+#nav-list a {
+  text-decoration: none;
+  color: #ecd4f1;
+}
+
+#nav-list a:hover {
+  text-shadow: 1px 0.1px 5px rgba(255, 255, 255, 0.541);
+}
+
+#home {
+  height: 110vh;
+  width: 100vw;
+  max-width: 100%;
+  padding-top: 4.5rem;
+  background-color: #d1bcd6;
+}
+
+#home #home-header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Source Serif Pro", serif;
+}
+
+#home-header h2,
+#home-header h3 {
+  margin: 0;
+}
+
+#home-header h2 {
+  padding-top: 1rem;
+  text-shadow: 1px 0.1px 5px #ffffff;
+}
+
+#home-header h3 {
+  padding-top: 0.4rem;
+  padding-bottom: 0.2rem;
+  text-shadow: 1px 0.1px 5px #ffffff;
+}
+
+#home figure figcaption {
+  font-family: "Source Serif Pro", serif;
+  font-family: "Philosopher", sans-serif;
+  font-size: clamp(0.1rem, 1rem, 0.6rem);
+  color: rgba(0, 0, 0, 0.432);
+}
+
+#home figure figcaption a {
+  color: rgba(0, 0, 0, 0.432);
+  text-decoration: none;
+}
+
+#register {
+  height: 120vh;
+  background: #a36e84;
+}
+
+#register div,
+#login div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#register div h3,
+#login div h3 {
+  text-transform: uppercase;
+  font-size: clamp(1rem, 6rem, 2rem);
+  text-shadow: 1px 0.5px 3px #ecd4f1;
+}
+
+form {
+  background-color: rgba(25, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
+  border: 1px solid #3a071b8e;
+  border-radius: 13px;
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  padding: 1rem 1rem;
+  font-family: "Source Serif Pro", serif;
+  font-family: "Philosopher", sans-serif;
+}
+
+input {
+  font-family: "Montserrat", sans-serif;
+}
+
+#personal-details label {
+  display: block;
+  padding-bottom: 5px;
+}
+
+#personal-details input {
+  width: 150px;
+}
+
+#gender-details {
+  margin-top: 5px;
+}
+
+#gender-details label {
+  display: block;
+  margin-bottom: -10px;
+}
+
+#gender-details ul {
+  padding-left: 0;
+}
+
+#gender-details li {
+  list-style-type: none;
+}
+
+#class-details {
+  margin-top: -7px;
+}
+
+#class-details label {
+  display: block;
+  margin-bottom: -10px;
+}
+
+#class-details ul {
+  padding-left: 0;
+}
+
+#class-details li {
+  list-style-type: none;
+}
+
+#source-section {
+  display: block;
+  margin-top: -5px;
+  margin-bottom: 15px;
+}
+
+#source-section select {
+  font-family: "Montserrat", sans-serif;
+}
+
+#source-section option {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-weight: 600;
+}
+
+#comment-box {
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+
+#comment-box textarea {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+
+#submit-btn {
+  background: #3a071b;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: aliceblue;
+  border: 1px solid #d1bcd6;
+  border-radius: 10px;
+  width: 7vw;
+  height: 4vh;
+  text-transform: uppercase;
+}
+
+#submit-btn:hover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #3a071b;
+  background-color: #d1bcd6;
+  border: 1px solid #3a071b;
+}
+
+#login-header,
+#login-screen {
+  display: flex;
+  flex-direction: column;
+  /* background: #a36e84; */
+  align-items: center;
+}
+
+#login-header {
+  color:#ecd4f1;
+}
+
+#login-header h1 {
+  text-transform: uppercase;
+}
+
+#login-screen #yum {
+  color:#ecd4f1;
+}
+
+#login-screen #login-msg {
+  color: #3a071b;
+}
+
+#login {
+  height: 60vh;
+  width: 100vw;
+  background-color: #d1bcd6;
+}

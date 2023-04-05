@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: linear-gradient(
+      180deg,
+      #a4ff4fcc,
+      #f3c80686 70.71%
+    ),
+    linear-gradient(127deg, #00ff4ccc, #0099ff00 70.71%),
+    linear-gradient(
+      336deg,
+      #11ff45cc,
+      #ff00f200 70.71%
+    );
+  background-attachment: fixed;
+  margin: 0;
+  font-family: "Anonymous Pro", monospace;
+  padding: 1rem;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: clamp(1rem, 4rem, 2rem);
+    color: #063d01;
+    text-shadow: 1px 0.5px 1px #90ff11cc, 1px 0.5px 1px #063d01;
+}
+
+header sup {
+    vertical-align: top;
+    font-size: clamp(0.2rem, 2rem, 1rem);
+    position: relative;
+    top: -0.7em;
+    color: #063d01;
+    text-shadow: 1px 0.5px 1px #90ff11cc;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+main div {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2rem;
+    justify-content: center;
+}
+
+main div button {
+    width: 15vw;
+    height: 10vh;
+    background-color: #268f1da8;  
+    border: 1px solid #32bb2660;
+    border-radius: 3px 8px;
+    box-shadow: 1px 0.5px 8px #90ff11cc;
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 600;
+    color: #acffa6;
+    text-transform: uppercase;
+    font-size: clamp(0.5rem, 3rem, 1rem); 
+}
+
+main div button:hover {
+    background-color: #90ff11cc;  
+    border: 1px solid #5eff004f;
+    color: #1f6e18;
+    box-shadow: 1px 0.1px 10px #5eff00;
+}

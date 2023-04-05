@@ -18,26 +18,71 @@
       href="https://cdn-icons-png.flaticon.com/512/9318/9318633.png"
       type="image/x-icon"
     />
-    <title>Survey Form</title>
+    <title>Webvy</title>
+    <script>
+      const validate = () => {
+        const phVal = document.getElementById("phone").value;
+        const pwdVal = document.getElementById("pwd").value;
+        const fnameVal = document.getElementById("name").value;
+        const lnameVal = document.getElementById("lname").value;
+
+        if (String(phVal).length != 10) {
+          alert("Phone no. should have 10 digits");
+          return false;
+        }
+
+        if (!/^[a-zA-z]*$/g.test(fnameVal)) {
+          alert("First name has to be characters only!");
+          return false;
+        }
+
+        if (!/^[a-zA-z]*$/g.test(lnameVal)) {
+          alert("Last name has to be characters only!");
+          return false;
+        }
+
+        if (pwdVal.length < 7) {
+          alert("Password should be greater than 6 characters!");
+          return false;
+        }
+
+        return true;
+      };
+    </script>
   </head>
   <body>
     <main>
       <div id="form-heading">
-        <h1 id="title">A Web Dev Survey</h1>
+        <h1 id="title">Webvy Registration</h1>
         <p id="description">For Students</p>
       </div>
 
-      <form action="#index.html" id="survey-form" method="post">
+      <form
+        action="#index.html"
+        id="survey-form"
+        method="post"
+        onsubmit="return validate()"
+      >
         <div id="form-body">
           <fieldset id="personal-details">
             <h2>Personal Details</h2>
-            <hr>
+            <hr />
             <label id="name-label" for="name"
-              >Name
+              >First Name
               <input
                 id="name"
                 type="text"
-                placeholder="Enter your name"
+                placeholder="Enter your first name"
+                required
+              />
+            </label>
+
+            <label id="lname-label" for="lname"
+              >Last Name
+              <input
+                id="lname"
+                type="text"
+                placeholder="Enter your last name"
                 required
               />
             </label>
@@ -51,13 +96,20 @@
               />
             </label>
             <label id="number-label" for="number"
-              >Age
+              >Phone No.
               <input
-                id="number"
-                type="number"
-                min="13"
-                max="120"
-                placeholder="Enter your age"
+                id="phone"
+                type="phone"
+                placeholder="Enter your number"
+                required
+              />
+            </label>
+            <label id="pwd-label" for="pwd"
+              >Password
+              <input
+                id="pwd"
+                type="password"
+                placeholder="Enter your password"
                 required
               />
             </label>
@@ -65,7 +117,7 @@
 
           <fieldset id="learning-details">
             <h2>Learning Progress</h2>
-            <hr>
+            <hr />
             <label id="radio-buttons" class="learning-q">
               Are you currently learning web development?
               <label for="yes-web">
@@ -120,7 +172,7 @@
 
             <label for="dropdown" class="learning-q">
               What do you find most difficult to learn?
-              <select id="dropdown" name="dropdown" >
+              <select id="dropdown" name="dropdown">
                 <option value="" name="options">(select one)</option>
                 <option value="1" name="options">The Box Model</option>
                 <option value="3" name="options">Grid and Flexbox</option>
@@ -128,20 +180,20 @@
                 <option value="2" name="options">None of the above</option>
               </select>
             </label>
-
           </fieldset>
 
           <fieldset id="student-feedback">
-            <h2>Feedback</h2>
-            <hr>
+            <h2>About Me</h2>
+            <hr />
             <label for="feedback">
-              Any comments you'd like to leave?
+              Please tell us about yourself and how got into web development
               <textarea
                 name="feedback"
                 id="feedback"
                 cols="45"
                 rows="10"
                 placeholder="Enter your feedback here..."
+                required
               ></textarea>
             </label>
           </fieldset>

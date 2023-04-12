@@ -1,71 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav id="navbar">
+        <ul id="nav-list">
+          <li><a href="#welcome-section" class="nav-link">About</a></li>
+          <li><a href="#projects-section" class="nav-link">Projects</a></li>
+          <li><a href="#contact-section" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet" />
-  <title>Portfolio</title>
-</head>
+    <!-- MAIN -->
+    <main>
+      <!-- ABOUT ME -->
+      <section id="welcome-section">
+        <h1>Hi! I'm Ady.</h1>
+        <h2>An aspiring <span class="special-text">web developer</span>.</h2>
+      </section>
+      <!-- PROJECTS -->
+      <section id="projects-section">
+        <h2>These are some of my projects.</h2>
+        <div id="project-grid">
+          <a
+            href="https://codepen.io/codeyady/full/YzjYXwm"
+            target="_blank"
+            class="project-tile"
+          >
+            <img src="https://shots.codepen.io/codeyady/pen/YzjYXwm-1280.webp?version=1674412125" alt="Project-1" />
+            <p>FCC Documentation Page</p>
+          </a>
+          <a
+            href="https://codepen.io/codeyady/full/ZEjvwqj"
+            target="_blank"
+            class="project-tile"
+            ><img src="https://shots.codepen.io/codeyady/pen/ZEjvwqj-512.webp?version=1675013670" alt="Project-2" />
+            <p>FCC Survey Form</p>
+          </a>
+          <a
+            href="https://codepen.io/codeyady/full/VwBzmqM"
+            target="_blank"
+            class="project-tile"
+            ><img src="	https://shots.codepen.io/codeyady/pen/VwBzmqM-512.webp?version=1674315629" alt="Project-3" />
+            <p>Silly Cat Page</p>
+          </a>
+        </div>
 
-<body>
-  <!-- HEADER -->
-  <header>
-    <nav id="navbar">
-      <ul id="nav-list">
-        <li><a href="#welcome-section" class="nav-link">About</a></li>
-        <li><a href="#projects-section" class="nav-link">Projects</a></li>
-        <li><a href="#contact-section" class="nav-link">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+        <div id="codepen-box">
+          <a href="https://codepen.io/codeyady" id="codepen-link">Show all</a>
+        </div>
+      </section>
+      <!-- CONTACT ME -->
 
-  <!-- MAIN -->
-  <main>
-    <!-- ABOUT ME -->
-    <section id="welcome-section">
-      <h1>Hi! I'm Shashank</h1>
-      <h2>Not so much of a <span class="special-text">web developer</span>.</h2>
-    </section>
-    <!-- PROJECTS -->
-    <section id="projects-section">
-      <h2>These are some of my projects.</h2>
-      <div id="project-grid">
-        <a href="https://codepen.io/codeyady/full/YzjYXwm" target="_blank" class="project-tile">
-          <img src="https://shots.codepen.io/codeyady/pen/YzjYXwm-1280.webp?version=1674412125" alt="Project-1" />
-          <p>FCC Documentation Page</p>
-        </a>
-        <a href="https://codepen.io/codeyady/full/ZEjvwqj" target="_blank" class="project-tile"><img
-            src="https://shots.codepen.io/codeyady/pen/ZEjvwqj-512.webp?version=1675013670" alt="Project-2" />
-          <p>FCC Survey Form</p>
-        </a>
-        <a href="https://codepen.io/codeyady/full/VwBzmqM" target="_blank" class="project-tile"><img
-            src="	https://shots.codepen.io/codeyady/pen/VwBzmqM-512.webp?version=1674315629" alt="Project-3" />
-          <p>Silly Cat Page</p>
-        </a>
-      </div>
-
-      <div id="codepen-box">
-        <a href="https://codepen.io/codeyady" id="codepen-link">Show all</a>
-      </div>
-    </section>
-    <!-- CONTACT ME -->
-
-    <section id="contact-section">
-      <h2>Find me on...</h2>
-      <div id="profile-list">
-        <a href="https://github.com/adelicia-js" class="profile-link" target="_blank"><img
-            src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png" alt=""> </a>
-        <a href="https://codepen.io/codeyady" class="profile-link" target="_blank"><img
-            src="https://cdn-icons-png.flaticon.com/512/2111/2111501.png" alt=""> </a>
-      </div>
-    </section>
-  </main>
-</body>
-
+      <section id="contact-section">
+        <h2>Find me on...</h2>
+        <div id="profile-list">
+            <a
+            href="https://github.com/adelicia-js"
+            class="profile-link"
+            target="_blank"
+            ><img src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png" alt=""> </a
+          >
+          <a
+            href="https://codepen.io/codeyady"
+            class="profile-link"
+            target="_blank"
+            ><img src="https://cdn-icons-png.flaticon.com/512/2111/2111501.png" alt=""> </a
+          >
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

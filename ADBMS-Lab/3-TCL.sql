@@ -1,6 +1,7 @@
 -- SAVEPOINT
 
 start transaction;
+
 savepoint college_save;
 
 -- COMMIT
@@ -25,13 +26,12 @@ start transaction;
 select * from Finals;
 
 delete from Finals
-where Theory < 50;
 
-select * from finals;
+where Theory > 50;
 
-savepoint college_save;
+select * from Finals;
 
-commit;
+rollback;
 
 -- ROLLBACK TO SAVEPOINT (METHOD-2)
 
@@ -39,11 +39,12 @@ start transaction;
 
 select * from Finals;
 
-delete from Finals
-where Theory < 50;
-
-select * from finals;
-
 savepoint college_save;
 
-commit;
+delete from Finals
+
+where Subject_Code = 'C01';
+
+rollback to savepoint college_save;
+
+select * from Finals;

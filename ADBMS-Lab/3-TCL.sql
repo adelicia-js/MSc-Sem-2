@@ -42,9 +42,12 @@ select * from Finals;
 savepoint college_save;
 
 delete from Finals
-
 where Subject_Code = 'C01';
 
+select * from Finals;
+
 rollback to savepoint college_save;
+
+commit;
 
 select * from Finals;

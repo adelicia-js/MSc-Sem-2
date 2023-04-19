@@ -8,7 +8,7 @@ use college_db;
 create table Students (
     Registration_Number varchar(6) primary key, 
     Student_Name varchar(100) not null, 
-    Age integer not null,
+    Age integer not null check(Age>=18),
     Class char(10) not null,
     Gender char(6) not null,
     Phone_Number bigint not null,
